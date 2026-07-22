@@ -1,3 +1,4 @@
+// Mobile nav toggle
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
@@ -16,11 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
         links.classList.remove('open');
       });
     });
+
+    // Close menu if tapping anywhere outside it
+    document.addEventListener('click', function (e) {
+      if (!links.contains(e.target) && !toggle.contains(e.target)) {
+        links.classList.remove('open');
+      }
+    });
   }
 
+  // Footer year
   var yearEl = document.getElementById('year');
   if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
+  // Contact form: no backend wired up yet, so guide the visitor to email directly.
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
