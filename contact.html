@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Raayartech Private Limited</title>
+<meta name="description" content="Get in touch with Raayartech Private Limited about our technology training programs.">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="img/logo.jpg" alt="Raayartech Private Limited logo">
+      <span class="brand-name">Raayartech<small>PRIVATE LIMITED</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color:#7fe3ee;">Contact</span>
+    <h1>Tell us what you want to learn.</h1>
+    <p>Send a few lines about your background and goals, and we'll reply with next steps.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow">Reach us directly</span>
+      <h2 style="margin-top:12px;">Contact details</h2>
+
+      <div class="contact-detail">
+        <span class="k">Email</span>
+        <span class="v">sales@raayartech.com</span>
+      </div>
+      <div class="contact-detail">
+        <span class="k">Phone</span>
+        <span class="v">+91 8277884075</span>
+      </div>
+      <div class="contact-detail">
+        <span class="k">Office</span>
+        <span class="v">No24,First Floor,2nd cross,Krishna Layout,Near ramdev medicals,Bennerghatta road,Bengaluru, Karnataka 560076</span>
+      </div>
+      <p class="note" style="margin-top:28px;">Learn & Grow @ Raayartech</p>
+    </div>
+
+    <div>
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+        </div>
+        <div class="form-field">
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option>Generative AI</option>
+            <option>Data Science</option>
+            <option>Cloud Computing</option>
+            <option>Cybersecurity</option>
+            <option>DevOps</option>
+            <option>Programming Foundations</option>
+            <option>Quantum Computing</option>
+            <option>Not sure yet</option>
+            
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="A little about your background and what you'd like to learn"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">This opens your email app with the message pre-filled — the form isn't wired to a server yet.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.png" alt="Raayartech logo">
+          <span>Raayartech Private Limited</span>
+        </div>
+        <p style="max-width:34ch; color:rgba(255,255,255,.6); font-size:.92rem;">Hands-on technology education, built one honest program at a time.</p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>sales@raayartech.com</li>
+          <li>+91 8277884075</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Raayartech Private Limited. All rights reserved.</span>
+      <span>Built in-house.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
